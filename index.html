@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de exercicio-contador</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Contador de Passos</h1>
+    </header>
+    <section>
+        <div div="dados">
+            <p>           
+                Inicio: <input type="number" name="txtI" id="txtI" >
+            </p>
+            <p>           
+                Fim: <input type="number" name="fim" id="txtF" >
+            </p>            
+            <p>           
+                Passos: <input type="number" name="passos" id="txtP" >
+            </p>
+            
+            <input type="button" value="contar" onclick="Contar()" id="submit">  
+        </div>
+       <div id="res">
+            <p>Resultado</p>
+       </div>
+       <span role="alert" id="nameError" aria-hidden="true"> Existem campos a serem preenchidos </span>
+    </section>
+    <footer>
+        <p>&copy; JoaoFaccin</p>
+    </footer>
+    <script src="./src/js/js.js"></script>
+</body>
+</html>
