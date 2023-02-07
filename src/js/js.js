@@ -105,6 +105,10 @@ function validate(e) {
     nameError.setAttribute('aria-hidden', false);
     nameError.setAttribute('aria-invalid', true);
   }
+   if(inicioTxt.value && fimTxt.value && passosTxt.value ){
+    nameError.innerHTML = ''
+
+  }
   
   return valid;
 }
